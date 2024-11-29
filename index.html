@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Trivia Quiz Game 2.0</h1>
+        <section class="user-names-container">
+            <label for="user1-name">Player 1</label>
+            <input type="text" placeholder="Player 1 Name" id="user1-name">
+            <br>
+            <label for="user2-name">Player 2</label>
+            <input type="text" placeholder="Player 1 Name" id="user2-name">
+            <br>    
+            <button id="start-game-btn">Start Game</button>
+        </section>
+        <section class="choose-category-container">
+            <label for="category">Choose a category</label>
+            <select name="category" id="category">
+                <option value="" disabled selected>Select a category</option>
+                <option class="category-option" value="general_knowledge">
+                    General Knowledge
+                </option>
+                <option class="category-option" value="sport_and_leisure">
+                    Sport and Leisure
+                </option>
+                <option class="category-option" value="arts_and_literature">
+                    Arts and Literature
+                </option>
+                <option class="category-option" value="science">Science</option>
+                <option class="category-option" value="food_and_drink">
+                    Food and Drink
+                </option>
+                <option class="category-option" value="film_and_tv">
+                    Film and TV
+                </option>
+                <option class="category-option" value="geography">Geography</option>
+            </select>
+            <br>
+            <button id="start-quiz-btn">Start Quiz</button>
+        </section>
+        <section class="quiz-data-container">
+            <div class="user-turn-container">Player Turn with Name</div>
+            <div class="question-difficulty-level-container">Level = {Easy, Medium, Hard}</div>
+            <div class="quiz-question-container">Q. It is a Question of the choosen category?</div>
+            <div class="quiz-options-container">
+                <div class="option-container">Option 1</div>
+                <div class="option-container">Option 2</div>
+                <div class="option-container"> Option 3</div>
+                <div class="option-container">Option 4 </div>
+            </div>
+            <button id="next-question-btn">Next Question</button>
+        </section>
+        <section class="quiz-end-container">
+            <button id="end-game-btn">End Game</button>
+            <button id="another-category-btn">Another Category</button>
+        </section>
+        <section class="final-result-container">
+            <div class="final-result">Congratulations! Player Name Wins</div>
+            <section class="user1-result">
+                <div class="user1-name">Player 1 Name</div>
+                <div class="user1-score">Player 1 Score</div>
+            </section>
+            <section class="user2-result">
+                <div class="user2-name">Player 2 Name</div>
+                <div class="user2-score">Player 2 Score</div>
+            </section>
+        </section>
+    </div>
+</body>
+
+</html>
