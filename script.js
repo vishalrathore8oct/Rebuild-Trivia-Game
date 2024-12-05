@@ -58,7 +58,7 @@ nextQuestionBtn.addEventListener("click", () => {
     if (currentQuestionIndex < finalQuizArray.length) {
 
         if (userChoosedAnswer === finalQuizArray[currentQuestionIndex].correctAnswer) {
-            // alert("Correct Answer");
+            alert("Correct Answer");
             if (currentQuestionIndex == 0) {
                 user1Score += 10;
             }else if (currentQuestionIndex == 1) {
@@ -73,7 +73,7 @@ nextQuestionBtn.addEventListener("click", () => {
                 user2Score += 25;
             }
         } else {
-            // alert("Incorrect Answer");
+            alert("Incorrect Answer");
         }
 
         currentQuestionIndex++;
